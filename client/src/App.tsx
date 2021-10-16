@@ -122,6 +122,10 @@ export class App extends React.PureComponent<{}, AppState> {
 				this.state.showRestore=false;
 			}
 		}
+		
+		else{
+			alert("No pinned tickets")
+		}
 	}
 
 	returnFromPined = () =>{
