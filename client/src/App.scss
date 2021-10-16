@@ -1,7 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 
-	background-color: #f5f9fc;
+	background-color: #b2d9f7;
 	padding-top: 100px;
 	
 	padding: 50px;
@@ -10,6 +10,8 @@ body {
 		max-width: 1000px;
 		margin: 0 auto;
 	}
+
+	
 
 	h1 {
 		font-weight: 300;
@@ -20,6 +22,19 @@ body {
 		font-size: 12px;
 		margin: 12px 5px;
 	}
+
+	.NextButton{
+		position: absolute;
+		float: right;
+		left: 85%; 
+	}
+
+	.PrevButton{
+		position: absolute;
+		float: right;
+		left: 80%; 
+	}
+
 
 	header {
 		width: 100%;
@@ -33,6 +48,7 @@ body {
 		border: 1px solid #fff;
 		padding: 10px 20px;
 		position: relative;
+
 
 		input {
 			width: 100%;
@@ -64,6 +80,7 @@ body {
 		margin: 0;
 		padding: 0;
 
+
 		.ticket {
 			width: 100%;
 			flex-shrink: 0;
@@ -83,13 +100,60 @@ body {
 			}
 
 			.title {
-				margin: 15px 0;
-				font-size: 16px;
+				margin: 18px 0;
+				font-size: 18px;
 				font-weight: 400;
 				font-style: normal;
-				color: #20455e;
+				color: #090185;
 			}
-			
+
+			.content{               //added for content
+				margin: 14px 0;
+				font-size: 13px;
+				font-weight: 300;
+				font-style: normal;
+				color: #004b1d;		
+			}
+
+			.HideBotton{     
+				position: absolute;
+				border-radius: 1%;
+				float: right;
+				margin-right: 50px;
+			    left: 85%; 
+			}
+
+			.HideBotton:hover{    
+				position: absolute;
+				cursor: pointer;
+				background-color: #ffb7b7;
+				float: right;
+				left: 85%;
+			}
+
+
+			.pinButton{     
+				position: absolute;
+				border-radius: 1%;
+				float: right;
+				margin-right: 50px;
+			    left: 92%; 
+			}
+
+			.pinButton:hover{      
+				position: absolute;
+				cursor: pointer;
+				background-color: #bdffd6;
+				float: right;
+				left: 92%;
+			}
+
+			.pinButton:focus{
+				display: none;
+			}
+
+
+		
 			footer {
 
 				display: flex;
@@ -100,6 +164,13 @@ body {
 					font-size: 12px;
 					margin: 10px 0;
 					flex-shrink: 0;
+				}
+
+
+				.label {
+					background-color: #d9e7f8;
+					border: 0.5px solid #09077c;
+					margin: 12px 5px
 				}
 			}
 
